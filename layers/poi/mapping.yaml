@@ -13,14 +13,17 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - bank
   - bar
   - bbq
+  - bench
   - bicycle_parking
   - bicycle_rental
   - biergarten
   - bus_station
   - cafe
+  - casino
   - charging_station
   - cinema
   - clinic
+  - charging_station
   - college
   - community_centre
   - courthouse
@@ -69,6 +72,7 @@ def_poi_mapping_amenity: &poi_mapping_amenity
 def_poi_mapping_barrier: &poi_mapping_barrier
   - bollard
   - border_control
+  - city_wall
   - cycle_barrier
   - gate
   - lift_gate
@@ -79,6 +83,7 @@ def_poi_mapping_barrier: &poi_mapping_barrier
 # building values , see http://taginfo.openstreetmap.org/keys/building#values
 def_poi_mapping_building: &poi_mapping_building
   - dormitory
+  - university
 
 # highway values , see http://taginfo.openstreetmap.org/keys/highway#values
 def_poi_mapping_highway: &poi_mapping_highway
@@ -95,6 +100,7 @@ def_poi_mapping_landuse: &poi_mapping_landuse
   - basin
   - brownfield
   - cemetery
+  - military
   - reservoir
   - winter_sports
 
@@ -110,12 +116,19 @@ def_poi_mapping_leisure: &poi_mapping_leisure
   - miniature_golf
   - park
   - pitch
+  - picnic_table
   - playground
   - sports_centre
+  - sports_hall
   - stadium
   - swimming_area
   - swimming_pool
   - water_park
+
+# natural values , see http://taginfo.openstreetmap.org/keys/natural#values
+def_poi_mapping_natural: &poi_mapping_natural
+  - cave_entrance
+  - arch
 
 # office values , see http://taginfo.openstreetmap.org/keys/office#values
 def_poi_mapping_office: &poi_mapping_office
@@ -382,6 +395,7 @@ def_poi_mapping_tourism: &poi_mapping_tourism
 # waterway values , see http://taginfo.openstreetmap.org/keys/waterway#values
 def_poi_mapping_waterway: &poi_mapping_waterway
   - dock
+  - waterfall
 
 def_poi_fields: &poi_fields
   - name: osm_id
@@ -454,6 +468,7 @@ def_poi_mapping: &poi_mapping
   historic: *poi_mapping_historic
   landuse: *poi_mapping_landuse
   leisure: *poi_mapping_leisure
+  natural: *poi_mapping_natural
   office: *poi_mapping_office
   railway: *poi_mapping_railway
   shop: *poi_mapping_shop
