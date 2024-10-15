@@ -17,6 +17,7 @@ tables:
       - allotments
       - farm
       - farmland
+      - farmyard
       - orchard
       - flowerbed
       - plant_nursery
@@ -27,6 +28,7 @@ tables:
       - forest
       - village_green
       - recreation_ground
+      - landfill
       natural:
       - wood
       - wetland
