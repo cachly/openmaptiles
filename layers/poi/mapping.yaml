@@ -495,3 +495,9 @@ tables:
     type: polygon
     columns: *poi_fields
     mapping: *poi_mapping
+
+  # etldoc: imposm3 -> osm_poi_linestring
+  poi_linestring:
+    type: linestring
+    columns: *poi_fields
+    mapping: *poi_mapping
