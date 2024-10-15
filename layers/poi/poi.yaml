@@ -108,6 +108,10 @@ layer:
           subclass: ['atm']
         fuel:
           subclass: ['fuel', 'charging_station']
+        barrier:
+          subclass: ['city_wall']
+        historic:
+          subclass: ['castle_wall']
     subclass:
       description: |
           Original value of either the
