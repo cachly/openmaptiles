@@ -189,7 +189,6 @@ def_poi_mapping_office: &poi_mapping_office
   - travel_agent
   - tutoring
   - union
-  - university
   - water_utility
   - web_design
   - wedding_planner
